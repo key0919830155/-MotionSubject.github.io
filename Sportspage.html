@@ -84,6 +84,7 @@ position: absolute;
 z-index: 1;
 margin-top:100px;
 margin-left:100px;
+display: none;
 }
 .img-fluid {
 display: none;   
@@ -187,6 +188,19 @@ $(function(){
     $(".card-img-top-3").fadeIn(10000);
     $(".card-img-top-3").fadeIn("slow");
 });
+
+$(function() {
+    $(".col-md-8").slideDown(2500);
+});
+
+$(document).click(function() {
+    $(".col-md-8").slideUp(3000);
+});
+$(document).scroll(function() {
+    $(".col-md-8").slideDown(1000);
+});
+
+
 </script>
 
 </head>
