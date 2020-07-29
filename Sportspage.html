@@ -9,7 +9,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+ 
  
 
 <style type="text/css">
@@ -41,7 +41,7 @@ justify-content: flex-end;
 }
 .navbar{
 width: 100%;
-position: absolute;
+position:absolute;
 z-index:1;
 }
 .block-bg{
@@ -80,7 +80,7 @@ font-size: 18px;
 }
 .col-md-8{
 width: 100%;
-position: absolute;
+position:absolute;
 z-index: 1;
 margin-top:100px;
 margin-left:100px;
@@ -101,6 +101,17 @@ margin-top: 15px;
 form{
 margin: 15px 15px 0px;
 }
+.Assist{
+float: right;
+position: fixed;
+right: 40px;
+bottom: 50px;
+z-index:5;
+}
+.Assist img{
+width:40px;
+}
+
 .footer{
 font-size:15px;
 padding:5px 0px 5px;
@@ -110,7 +121,6 @@ background-color: black;
 text-align:center;
 font-family:微軟正黑體;
 margin-bottom: 0px;
-
 }
 @media screen and (max-width:910px){
     .item{
@@ -196,6 +206,7 @@ $(function() {
 $(document).click(function() {
     $(".col-md-8").slideUp(3000);
 });
+
 $(document).scroll(function() {
     $(".col-md-8").slideDown(1000);
 });
@@ -233,7 +244,7 @@ $(document).scroll(function() {
 
     </div>
     <div>
-      <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #3f51b5;">
+      <nav class="navbar navbar-expand-sm navbar-light" id="aaaa" style="background-color: #3f51b5;">
         <a class="navbar-brand" href="#">HOME</a>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -315,6 +326,12 @@ $(document).scroll(function() {
         </div>
         <button type="submit" class="btn btn-primary">提交</button>
       </form>
+
+      <div class="Assist">
+        <a href="#aaaa">
+          <img src="./ico/iconfinde.png">
+        </a>
+      </div>
 
 
     
